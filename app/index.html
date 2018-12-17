@@ -1,0 +1,44 @@
+<!-- Replace your-device-ID-goes-here with your actual device ID
+and replace your-access-token-goes-here with your actual access token-->
+<!DOCTYPE>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Photon AngularJS</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/locale/fr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body ng-app="app">
+
+<h1>{{maVariable}}</h1>
+
+<div class="container">
+    <ul>
+        <li><a href="#!/led">led</a></li>
+        <li><a href="#!/devices">devices</a></li>
+    </ul>
+    <div ng-view></div>
+
+</div>
+
+<!--<script src="lib/angular.min.js"></script>-->
+<script type="text/javascript" src="javascript/app.js"></script>
+<script type="text/javascript" src="controller/app_controller.js"></script>
+<script type="text/javascript" src="controller/device_controller.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
+</script>
+
+</body>
+</html>

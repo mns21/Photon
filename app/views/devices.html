@@ -1,0 +1,9 @@
+<div>
+    <ul class="list-group-item clickable"> Liste des devices
+        <li ng-href="#!/devices/{{device._id}}"ng-repeat='device in devices' class="collection-item list-group-item">
+            <p>{{device.name}}</p>
+            <p>{{device._id}}</p>
+        </li>
+    </ul>
+
+</div>
